@@ -1,0 +1,101 @@
+:root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:#58454d;background:#fff8f3;font-size:15px}*{box-sizing:border-box}body{margin:0}.app{max-width:620px;margin:auto;min-height:100dvh;padding:0 16px 105px}header{display:flex;justify-content:space-between;align-items:center;padding:25px 3px 16px}header small{color:#b17b90;font-weight:700}h1{font-size:25px;margin:4px 0}h2{font-size:16px;margin:0 0 13px}.flower{background:#f8e0e9;border-radius:50%;padding:13px;color:#a34f70;font-size:24px}.version{font-size:10px;color:#a9919b}.page{display:none}.page.active{display:block}.hero{background:#f6dde5;border-radius:23px;padding:24px;color:#825668;display:flex;flex-direction:column;gap:8px}.hero strong{font-size:clamp(26px,8vw,38px);color:#593c4a;overflow-wrap:anywhere}.hero small{font-size:12px}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.stats article{margin:0}.stats b{display:block;font-size:clamp(16px,5vw,23px);margin-top:8px;overflow-wrap:anywhere}.stats article:first-child b{color:#47836a}.stats article:last-child b{color:#a34f70}article{background:#fff;border-radius:18px;padding:17px;margin:12px 0;box-shadow:0 3px 16px #b7798a0a}.big{font-size:26px;font-weight:800;margin:0}.heading{display:flex;justify-content:space-between;align-items:center}.link{background:none;border:0;color:#ad6883;font-weight:700}.primary,.secondary,.importLabel{width:100%;padding:15px;border-radius:14px;border:0;font-weight:700;font-size:15px;cursor:pointer;margin-top:10px}.primary{background:#b9708b;color:white}.secondary,.importLabel{background:#f8e6ec;color:#86566a;display:block;text-align:center}.importLabel input{display:block;max-width:100%;margin:10px auto 0}label{display:block;font-size:13px;font-weight:700;margin:14px 0;color:#775963}input,select,textarea{display:block;width:100%;min-width:0;margin-top:7px;padding:13px;border:1px solid #ead6df;background:#fff;border-radius:12px;color:#58454d;font:inherit}button{font:inherit;cursor:pointer}.filters{display:grid;grid-template-columns:1fr 1fr;gap:10px}.filters input,.filters select{margin:0}.entry{display:flex;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid #f5edf0}.entry:last-child{border:0}.entryIcon{background:#fff0f5;padding:10px;border-radius:12px}.entryMain{flex:1;min-width:0}.entryMain strong{display:block;overflow-wrap:anywhere}.entryMain small{color:#9a838b}.entryAmount{font-weight:700;white-space:nowrap}.income{color:#47836a}.expense{color:#a34f70}.entryActions{display:flex;gap:6px}.entryActions button,.accountDelete{background:#f8e6ec;border:0;border-radius:8px;padding:7px 9px;color:#86566a;font-size:12px}.empty{color:#9a838b;padding:20px 0;text-align:center}.pieRow{display:flex;gap:15px;align-items:center;flex-wrap:wrap}.pie{width:175px;height:175px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;background:#f4e9ed}.pie span{width:105px;height:105px;border-radius:50%;background:white;display:grid;place-items:center;font-weight:800;font-size:15px}.legend{flex:1;min-width:125px;font-size:12px}.legend div{margin:8px 0}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}.bars{height:210px;display:flex;align-items:flex-end;gap:10px;padding:15px 0 0;border-bottom:1px solid #ddd}.barGroup{flex:1;min-width:0;text-align:center;height:100%;display:flex;flex-direction:column;justify-content:flex-end}.barPair{display:flex;gap:3px;align-items:flex-end;justify-content:center;flex:1}.bar{width:32%;border-radius:5px 5px 0 0;min-height:0}.bar.in{background:#91c7aa}.bar.out{background:#d49bb0}.barGroup small{font-size:10px;padding:7px 0}.barLegend{display:flex;gap:15px;font-size:12px;margin-top:10px}.barLegend span:first-child{color:#47836a}.barLegend span:last-child{color:#a34f70}.accountRow{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #f5edf0;gap:10px}.accountRow strong{overflow-wrap:anywhere}nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:620px;background:#fff;border-top:1px solid #f0dfe6;display:flex;justify-content:space-around;padding:9px 5px calc(9px + env(safe-area-inset-bottom));z-index:10}nav button{background:none;border:0;min-width:0;flex:1;color:#9d8890;font-size:11px;padding:5px 0}nav button span{display:block;font-size:23px;margin-bottom:3px}nav button.selected{color:#a34f70;font-weight:800}small{line-height:1.5}#destinationLabel[hidden],#cancelEdit[hidden]{display:none}@media(max-width:340px){.pie{width:145px;height:145px}.pie span{width:90px;height:90px}.app{padding-left:10px;padding-right:10px}}
+
+/* v1.1 additions */
+.shortcut-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.shortcut-grid button{font-size:12px;padding:12px 5px}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.cal-head{text-align:center;font-size:12px;color:#906d7a;padding:5px 0}
+.cal-day{border:1px solid #f1dfe6;background:#fffafc;border-radius:10px;min-width:0;min-height:62px;padding:4px 1px;display:flex;flex-direction:column;align-items:center;gap:3px;color:#674655}
+.cal-day.picked{background:#f7dce5;border-color:#bf819a}
+.cal-day small{font-size:9px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cal-in{color:#468467}.cal-out{color:#ba6887}
+.goal-track{height:12px;border-radius:99px;background:#f3e2e9;overflow:hidden;margin:12px 0}
+.goal-fill{height:100%;background:#c7809a;border-radius:99px}
+.mini-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.mini-actions button{width:auto;flex:1;min-width:65px;padding:10px 8px}
+.page,article,form,label,input,select{min-width:0}
+@media(max-width:370px){.cal-day small{font-size:8px}.shortcut-grid{grid-template-columns:1fr 1fr}}
+/* v1.2 themes and compact enhancements */
+:root{--bg:#fff8f3;--ink:#58454d;--card:#fff;--hero:#f6dde5;--hero-ink:#825668;--hero-strong:#593c4a;--accent:#b9708b;--soft:#f8e6ec;--soft-ink:#86566a;--border:#ead6df;--positive:#47836a;--negative:#a34f70;--nav:#fff}
+:root[data-theme="navy"]{--bg:#101c2d;--ink:#e8eff7;--card:#1b2b42;--hero:#263e5d;--hero-ink:#d0e2f5;--hero-strong:#fff;--accent:#416eab;--soft:#2c4261;--soft-ink:#e4f0ff;--border:#48607d;--positive:#8dd7b3;--negative:#f2a5ae;--nav:#192a40}
+:root[data-theme="forest"]{--bg:#edf5f0;--ink:#294339;--card:#fff;--hero:#d8e8df;--hero-ink:#426857;--hero-strong:#204b3a;--accent:#3e8065;--soft:#dcece3;--soft-ink:#2b6550;--border:#bcd7c7;--positive:#287953;--negative:#ac685f;--nav:#fff}
+:root{background:var(--bg);color:var(--ink)}
+body{background:var(--bg);color:var(--ink)}
+article{background:var(--card);color:var(--ink);box-shadow:0 3px 16px #0000000a}
+.hero{background:var(--hero);color:var(--hero-ink)}.hero strong{color:var(--hero-strong)}
+.primary{background:var(--accent);color:#fff}.secondary,.importLabel,.entryActions button,.accountDelete{background:var(--soft);color:var(--soft-ink)}
+label{color:var(--ink)}input,select,textarea{border-color:var(--border);background:var(--card);color:var(--ink)}
+nav{background:var(--nav);border-color:var(--border)}nav button.selected,.link{color:var(--accent)}nav button{color:var(--ink)}
+.entry,.accountRow{border-color:var(--border)}.entryIcon{background:var(--soft)}.income,.stats article:first-child b{color:var(--positive)}.expense,.stats article:last-child b{color:var(--negative)}
+.pie span{background:var(--card);color:var(--ink)}.cal-day{background:var(--card);border-color:var(--border);color:var(--ink)}.cal-day.picked{background:var(--soft)}.cal-head{color:var(--ink)}.goal-track,.budget-track{background:var(--soft)}.goal-fill,#budgetBar{background:var(--accent)}
+header small,.version,.flower,.muted,.empty{color:var(--soft-ink)}.flower{background:var(--soft)}
+.theme-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.theme-options button{min-width:0;border:2px solid var(--border);background:var(--card);color:var(--ink);padding:10px 4px;border-radius:14px;font-size:12px}.theme-options button.chosen{border-color:var(--accent);font-weight:800}.swatch{display:block;width:30px;height:30px;border-radius:50%;margin:0 auto 7px}.swatch.blush{background:#dca3b7}.swatch.navy{background:#253f63}.swatch.forest{background:#4c8a70}
+.budget-track{height:10px;border-radius:99px;overflow:hidden;margin:10px 0}#budgetBar{height:100%;border-radius:99px}#budgetBar.over{background:#d86c68}#budgetCard[hidden]{display:none}
+.quick-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:var(--soft);color:var(--soft-ink);border:0;border-radius:12px;padding:13px;margin:7px 0;overflow-wrap:anywhere}.quick-item strong{white-space:nowrap}
+#fixedSummary{font-weight:700;color:var(--positive);padding:8px 0}
+button:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:390px){.entry{flex-wrap:wrap}.entryActions{width:100%;justify-content:flex-end}.entryAmount{margin-left:auto}.app{padding-left:12px;padding-right:12px}nav button{font-size:10px}nav button span{font-size:20px}}
+
+/* v1.3 */
+.privacy-toggle{align-self:flex-start;background:var(--soft);color:var(--soft-ink);border:1px solid var(--border);border-radius:12px;padding:8px 12px;font-size:12px}
+.privacy-mode [data-private],.privacy-mode .private-value,.privacy-mode .entryAmount,.privacy-mode .accountRow div div,.privacy-mode .quick-item strong,.privacy-mode .goal-card p,.privacy-mode .goal-card small,.privacy-mode .barGroup .bar{filter:blur(8px);user-select:none}
+.backup-notice{border:1px solid var(--border);background:var(--soft);color:var(--soft-ink);border-radius:12px;padding:12px;margin:0 0 12px;font-size:13px}
+.backup-notice button{border:0;background:transparent;color:inherit;text-decoration:underline;font-weight:700}
+#paydayCard,#dailyBudgetCard,#savingsCard{overflow:hidden}
+#paydayCard .big,#dailyBudgetCard .big,#savingsCard .big{overflow-wrap:anywhere}
+[hidden]{display:none!important}
+.privacy-mode #home .stats b,.privacy-mode #home #budgetInfo,.privacy-mode #analysis .pieRow,.privacy-mode #analysis #monthlyReview,.privacy-mode #fixedList article p,.privacy-mode #calendarGrid .cal-day small,.privacy-mode #goals .goal-card p,.privacy-mode #goals .goal-card small{filter:blur(8px);user-select:none}
+
+/* v1.4 planned transactions */
+.date-notice{margin:0;padding:10px 12px;border-radius:12px;background:var(--soft);color:var(--soft-ink);font-size:12px;line-height:1.6}
+#upcomingCard .entry{flex-wrap:wrap}
+#upcomingCard .entryActions{width:100%;display:flex;gap:8px;justify-content:flex-end}
+#upcomingCard .entryActions button{min-width:60px}
+#upcomingSummary{font-size:13px}
+
+.cal-planned{color:var(--soft-ink);font-weight:700}
+
+/* v1.5 additional palettes and confirmations */
+:root[data-theme="lavender"]{--bg:#f6f2fc;--ink:#4e4566;--card:#fff;--hero:#eae3f7;--hero-ink:#74618e;--hero-strong:#493866;--accent:#866bb5;--soft:#eee7f9;--soft-ink:#654c90;--border:#d8cce9;--positive:#40866e;--negative:#a66789;--nav:#fff}
+:root[data-theme="sand"]{--bg:#fcf8f1;--ink:#5c4a3c;--card:#fff;--hero:#f5e8d4;--hero-ink:#8c6b4b;--hero-strong:#55402e;--accent:#aa7950;--soft:#f6ecdf;--soft-ink:#815b3c;--border:#e8d8c3;--positive:#42816d;--negative:#b16b5a;--nav:#fff}
+.swatch.lavender{background:#a68bd0}.swatch.sand{background:#c7a27d}
+.theme-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px}
+.theme-options button{min-width:0}
+.forecast-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.forecast-grid>div{background:var(--soft);padding:12px;border-radius:12px;min-width:0}
+.forecast-grid strong{display:block;overflow-wrap:anywhere;font-size:clamp(15px,4vw,22px);margin-top:6px}
+#entryPendingLabel{display:flex;gap:10px;align-items:center}
+#entryPendingLabel input{width:20px;flex-shrink:0;margin:0}
+.entry{flex-wrap:wrap}
+.entryActions{flex-wrap:wrap;justify-content:flex-end}
+.entryActions .confirm-entry{background:var(--accent);color:white}
+.entryActions button:disabled{opacity:.5;cursor:not-allowed}
+.privacy-mode .forecast-grid strong{filter:blur(8px);user-select:none}
+
+/* Mellow Money v1.6 — piggy bank identity / warm yellow design */
+:root[data-theme="honey"]{--bg:#fffaf0;--ink:#503c2a;--card:#fffefb;--hero:#ffe477;--hero-ink:#76541c;--hero-strong:#4a341b;--accent:#9b632b;--soft:#fff0c4;--soft-ink:#7b552c;--border:#f0ddaa;--positive:#47866c;--negative:#c3676b;--nav:#fffef9}
+.swatch.honey{background:linear-gradient(135deg,#ffe36c,#ffcf47)}
+:root{font-family:ui-rounded,system-ui,-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
+body{background:var(--bg);color:var(--ink)}
+.app{max-width:660px}
+header{padding:22px 3px 18px;gap:12px}
+header h1{letter-spacing:-.7px;font-weight:850}
+header small{font-size:12px;letter-spacing:.3px}
+.brand-icon{width:58px;height:58px;object-fit:cover;border-radius:18px;box-shadow:0 6px 18px #9b632b20;flex-shrink:0}
+.hero{position:relative;border:1px solid var(--border);box-shadow:0 9px 24px #7b552c12;border-radius:24px;padding:23px}
+.hero:before{content:"";position:absolute;right:18px;top:18px;width:46px;height:46px;background:url('icon-192.png') center/contain no-repeat;opacity:.23;pointer-events:none}
+article{border:1px solid var(--border);border-radius:20px;box-shadow:0 5px 18px #4a341b09}
+.primary,.secondary,.importLabel{border-radius:14px;transition:filter .15s,transform .15s}
+.primary:active,.secondary:active,nav button:active{transform:scale(.98)}
+input,select,textarea{border-radius:13px}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid #f5bb40;outline-offset:2px}
+nav{border-radius:18px 18px 0 0;box-shadow:0 -6px 25px #4a341b0c;gap:1px}
+nav button{border-radius:12px;min-width:0;padding:7px 0 4px;transition:background .15s}
+nav button.selected{background:var(--soft);color:var(--soft-ink)}
+nav button .nav-icon{height:26px;margin:0 auto 4px;display:flex;align-items:center;justify-content:center}
+nav button .nav-icon svg{width:23px;height:23px}
+.theme-options button{border-radius:16px;padding:12px 5px;transition:transform .15s}
+.theme-options button:active{transform:scale(.97)}
+.entryIcon{font-size:18px}
+#forecastCard .forecast-grid>div{border:1px solid var(--border)}
+@media(max-width:390px){nav button .nav-icon svg{width:21px;height:21px}nav button{font-size:10px}.brand-icon{width:50px;height:50px}}
